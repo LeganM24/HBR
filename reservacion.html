@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <title>HACHE BARBER ROOM</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     
+     <link rel="stylesheet" href="reservacion.css">
+     <link rel="icon" href="Imagenes/logo2.png">
+ </head>
+
+
+    <body>
+
+        <header>
+
+            <div class="texto-header">
+
+                <h1>Bienvenidos a HACHE BARBER ROOM</h1>
+                <p> donde el estilo comienza.</p>
+            </div>
+
+              <a href="index.html" class="logo">
+        <img src="Imagenes/logo1.png" alt="Logo de la Barberia">
+    </a>
+
+        
+        </header>
+
+            <main>
+                <section id="banner">
+
+                  <img src="Imagenes/banner.jpg" alt="Banner principal">
+
+             
+
+                    <nav>
+                      <a href="index.html">Inicio</a>
+                      <a href="nosotros.html">nosotros</a>
+                      <a href="servicios.html">Servicios</a>
+                      <a href="#contactos">contactos</a>
+                      <a href="cupos.html">Cupos</a>
+
+                    </nav>
+
+                </section>
+
+
+                <section id="contenido">
+
+                   <h2>Reserva tu cita</h2>
+                   <p>Completa el siguiente formulario pare reservar tu proxima visita</p>
+
+                   <form id="reservar">
+
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" required>
+
+                    <label for="telefono">telefono</label>
+                    <input type="number" id="telefono" required>
+
+                    <label for="correo">Correo electronico (opcional)</label>
+                    <input type="email" id="correo">
+
+                    <label for="servicio">Servicios</label>
+                    <select id="servicio" required>
+
+
+                        <option value=""></option>
+                        <option value="cerquillo">Cerquillo</option>
+                        <option value="corte">Corte de cabello</option>
+                        <option value="barba">Barba</option>
+                        <option value="corte-barba">Corte mas barba</option>
+                        <option value="fade">Fade</option>
+
+                    </select>
+
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" required>
+
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora" required>
+
+                    <label for="comentario">Observacion</label>
+                    <textarea id="comentario" rows="10" cols="40"></textarea>
+
+                    <button type="button" id="reservacion"> Crear cita</button>
+
+                   </form>
+
+                </section>
+
+                <section id="citaCreada">
+
+
+                </section>
+
+                <section id="buscarCita">
+
+                    <h2>Consultar Cita</h2>
+                    <p> Ingrese el Numero de referencia para consultar cita</p>
+
+                    <input type="text" id="buscarReferencia">
+                    <button type="button" id="buscar">buscar</button>
+
+                    <div id="resultadoBusqueda"></div>
+
+
+                </section>
+
+
+            
+
+            </main>
+
+                <footer id="contactos" >
+
+                    
+
+                   <p>📍 Dirección:</p> 
+                        <a href="https://maps.app.goo.gl/2swmBkpv3gUsSrfVA" target="_blank">
+                       <i class="fa-solid fa-location-dot"></i>
+                       Calle 28 #32, sector Carlos Alvarez, villa mella.
+                      Santo Domingo Norte.
+                       </a>
+
+                   <p>📞 Teléfono:</p>
+                     
+                    012-345-6789 / 987-654-3210  
+
+                   <p>🕒 Horario: </p>
+                          
+                           Mar - Vie de 8 AM a 10 PM
+                           <br>
+                           Sab - Dom 10 AM a 9 PM 
+
+                   <p>📱 Redes Sociales</p>
+                   <a href="https://www.instagram.com/hachebarberroom" target="_blank">
+                   <i class="fa-brands fa-instagram"> Instagram</i>
+                   </a>
+                   <a href="https://www.facebook.com/hachebarberroom" target="_blank">
+                   <i class="fa-brands fa-facebook"> Facebook</i>
+                   </a>
+                   <a href="https://www.whatsapp.com/hachebarberroom" target="_blank">
+                   <i class="fa-brands fa-whatsapp"> Whatsapp</i>
+                   </a>
+                   <br>
+
+                   <a class="reservar" href="reservacion.html">Reservar Cita</a>
+                   <a class="admin" href="login.html">Administrador</a>
+
+                </footer>
+
+      <script src="reservacion.js"></script>
+    </body>
+</html>
+
+
+

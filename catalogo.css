@@ -1,0 +1,484 @@
+/* ================= GENERAL ================= */
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    margin: 0;
+    background-color: #0a0a0a;
+    color: white;
+     font-family: "Cinzel", serif;
+
+}
+
+/* ================= HEADER ================= */
+
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 0 30px;
+    background-color: #000000;
+    border-bottom: 1px solid #c9a227;
+    
+
+
+}
+
+.texto-header {
+
+    text-align: center;
+
+}
+
+
+.texto-header h1 {
+
+    font-size: 35px;
+    margin: 10px 0;
+    color: #e2c669;
+    transition: 0.9s;
+    font-family: "Cinzel", serif;
+
+}
+
+.texto-header h1:hover{
+
+    transform: scale(1.1);
+}
+
+.texto-header p {
+
+    font-family: "Cinzel", serif;
+    font-size: 22px;
+    color: #e2c669;
+    transition: 0.9s;
+
+}
+.texto-header p:hover{
+
+    transform: scale(1.1);
+}
+
+header img {
+
+    width: 350px;
+    height: auto;
+    transition: 0.9s;
+
+}
+header img:hover{
+
+    transform: scale(1.1);
+}
+
+
+/* ================= BANNER ================= */
+
+
+#banner {
+
+    position: relative;
+    width: 100%;
+
+}
+
+
+#banner img {
+
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+
+}
+
+
+
+/* ================= Contenido aqui, carajo ================= */
+
+/* PANEL ADMIN */
+
+#panel-admin{
+
+    display: flex;
+
+    width: 90%;
+    max-width: 1400px;
+    min-height: 700px;
+    margin: 50px auto;
+    gap: 30px;
+
+}
+
+
+
+/* MENU LATERAL */
+
+.menu-admin{
+
+    width: 250px;
+    background:#0a0a0a;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow:0 0 20px rgba(226,198,105,0.15);
+
+}
+
+
+
+.menu-admin h2{
+
+    text-align: center;
+    color: #e2c669;
+    margin-bottom: 30px;
+
+}
+
+
+
+.menu-admin a{
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+
+}
+
+.menu-admin a:hover{
+
+    background-color: #e2c669;
+    color: black;
+    transform: scale(1.05);
+
+}
+
+.menu-admin a.activo{
+
+    background-color: #d4af37;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(212,175,55,.6);
+}
+
+
+
+/* CONTENIDO */
+
+.contenido-admin{
+
+    flex: 1;
+    background-color: #111;
+    padding: 40px;
+    box-shadow:0 0 20px rgba(226,198,105,0.15);
+    border-radius: 15px;
+
+}
+
+
+
+.contenido-admin h2{
+
+    color: #e2c669;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+/*=============================
+    BOTÓN AGREGAR SERVICIO
+=============================*/
+
+.agregar-servicio{
+
+    display: block;
+
+    margin: 20px auto 35px;
+
+    padding: 12px 25px;
+
+    background: #d4af37;
+    color: #000;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.agregar-servicio:hover{
+
+    background: #f1c84b;
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/*=============================
+    LISTA DE SERVICIOS
+=============================*/
+
+.lista-servicios{
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-top: 30px;
+
+}
+
+
+
+/*=============================
+    TARJETAS
+=============================*/
+
+.servicio{
+
+    width: 280px;
+
+    background: #1f1f1f;
+
+    color: white;
+
+    border-left: 5px solid #d4af37;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    transition: .3s;
+
+    box-shadow: 0 0 12px rgba(0,0,0,.4);
+
+}
+
+.servicio:hover{
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 0 18px rgba(212,175,55,.4);
+
+}
+
+.servicio h3{
+
+    color: #d4af37;
+
+    margin-bottom: 12px;
+
+}
+
+.servicio p{
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+
+
+/*=============================
+    BOTONES
+=============================*/
+
+.acciones-servicio{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+.acciones-servicio button{
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+}
+
+
+
+/* EDITAR */
+
+.editar{
+
+    background: #d4af37;
+
+    color: black;
+
+}
+
+.editar:hover{
+
+    background: #f1c84b;
+
+}
+
+
+
+/* ELIMINAR */
+
+.eliminar{
+
+    background: #a61d24;
+
+    color: white;
+
+}
+
+.eliminar:hover{
+
+    background: #c62828;
+
+}
+
+
+
+/* EFECTO GENERAL */
+
+.acciones-servicio button:hover{
+
+    transform: scale(1.03);
+
+}
+
+
+/* ================= FOOTER ================= */
+
+/* Esto hace que el scroll en HTML sea smooth */
+html{
+
+    scroll-behavior: smooth;
+}
+/* Esto hace que el scroll en HTML sea smooth */
+
+footer {
+
+    background-color: #000000;
+    text-align: center;
+    padding: 30px;
+    border-top: 2px solid #d4af37;
+    justify-content: center;
+
+}
+
+footer p {
+
+    margin: 5px;
+    color:  #d4af37;
+    margin-bottom: 10px;
+
+}
+
+footer a {
+
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.fa-solid.fa-location-dot{
+
+    color: red;
+}
+
+.fa-instagram{
+    background: linear-gradient(45deg, #FEDA75, #FA7E1E, #D62976, #962FBF, #4F5BD5 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.fa-facebook{
+    color: #1877f2;
+}
+.fa-whatsapp{
+    color: #25D366;
+}
+
+.reservar {
+
+    background-color: #d4af37;
+    color: black;
+    font-weight: bold;
+    transition: 0.9s;
+
+}
+
+
+.admin {
+
+    background-color: #333;
+    color: white;
+    transition: 0.9s;
+
+}
+
+footer a:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+.lista-citas{
+
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px !important;
+
+}
+
+.cita-admin{
+
+    width: auto !important;
+}

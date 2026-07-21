@@ -1,0 +1,338 @@
+/* ================= GENERAL ================= */
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    margin: 0;
+    background-color: #0a0a0a;
+    color: white;
+     font-family: "Cinzel", serif;
+
+}
+
+/* ================= HEADER ================= */
+
+
+header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 30px;
+    background-color: #000000;
+
+
+}
+
+.texto-header {
+
+    text-align: center;
+
+}
+
+
+.texto-header h1 {
+
+    font-size: 35px;
+    margin: 10px 0;
+    color: #e2c669;
+    transition: 0.9s;
+    font-family: "Cinzel", serif;
+
+}
+
+.texto-header h1:hover{
+
+    transform: scale(1.1);
+}
+
+.texto-header p {
+
+    font-family: "Cinzel", serif;
+    font-size: 22px;
+    color: #e2c669;
+    transition: 0.9s;
+
+}
+.texto-header p:hover{
+
+    transform: scale(1.1);
+}
+
+header img {
+
+    width: 350px;
+    height: auto;
+    transition: 0.9s;
+
+}
+header img:hover{
+
+    transform: scale(1.1);
+}
+
+
+/* ================= BANNER ================= */
+
+
+#banner {
+
+    position: relative;
+    width: 100%;
+
+}
+
+
+#banner img {
+
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+
+}
+
+/* ================= MENU SOBRE EL BANNER ================= */
+
+nav {
+
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+nav a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 25px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 8px;
+    transition: 0.9s;
+
+}
+
+nav a:hover {
+
+    background-color: #d4af37;
+    color: black;
+    transform: scale(1.1);
+
+}
+
+nav a.activo {
+    color: #d4af37;
+    font-weight: bold;
+    border-bottom: 2px solid #d4af37;
+}
+
+/* ================= Contenido aqui, carajo ================= */
+
+#cupos{
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+
+#cupos h2{
+
+    color:#d4af37;
+
+    font-size:35px;
+
+}
+
+
+#cupos p{
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+.lista-cupos{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+
+
+.cupo{
+
+    width:260px;
+
+    padding:25px;
+
+    background:#1f1f1f;
+
+    border-radius:12px;
+
+    color:white;
+
+}
+
+.disponible{
+
+    border:2px solid #d4af37;
+
+}
+
+
+.disponible span{
+
+    display:block;
+
+    color:#d4af37;
+
+    font-weight:bold;
+
+    margin:15px;
+
+}
+
+.ocupado{
+
+    border:2px solid #8b0000;
+
+}
+
+
+.ocupado span{
+
+    color:#ff5555;
+
+    font-weight:bold;
+
+}
+
+.cupo a{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:10px 20px;
+
+    background:#d4af37;
+
+    color:black;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+}
+
+
+.cupo a:hover{
+
+    background:#f1c84b;
+
+}
+
+/* ================= FOOTER ================= */
+
+/* Esto hace que el scroll en HTML sea smooth */
+html{
+
+    scroll-behavior: smooth;
+}
+/* Esto hace que el scroll en HTML sea smooth */
+
+footer {
+
+    background-color: #000000;
+    text-align: center;
+    padding: 30px;
+    border-top: 2px solid #d4af37;
+    justify-content: center;
+
+}
+
+footer p {
+
+    margin: 5px;
+    color:  #d4af37;
+    margin-bottom: 10px;
+
+}
+
+footer a {
+
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.fa-solid.fa-location-dot{
+
+    color: red;
+}
+
+.fa-instagram{
+    background: linear-gradient(45deg, #FEDA75, #FA7E1E, #D62976, #962FBF, #4F5BD5 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.fa-facebook{
+    color: #1877f2;
+}
+.fa-whatsapp{
+    color: #25D366;
+}
+
+.reservar {
+
+    background-color: #d4af37;
+    color: black;
+    font-weight: bold;
+    transition: 0.9s;
+
+}
+
+
+.admin {
+
+    background-color: #333;
+    color: white;
+    transition: 0.9s;
+
+}
+
+footer a:hover {
+
+    transform: scale(1.05);
+
+}

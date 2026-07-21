@@ -1,0 +1,353 @@
+/* ================= GENERAL ================= */
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    margin: 0;
+    background-color: #0a0a0a;
+    color: white;
+     font-family: "Cinzel", serif;
+
+}
+
+/* ================= HEADER ================= */
+
+
+header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 30px;
+    background-color: #000000;
+
+
+}
+
+.texto-header {
+
+    text-align: center;
+
+}
+
+
+.texto-header h1 {
+
+    font-size: 35px;
+    margin: 10px 0;
+    color: #e2c669;
+    transition: 0.9s;
+    font-family: "Cinzel", serif;
+
+}
+
+.texto-header h1:hover{
+
+    transform: scale(1.1);
+}
+
+.texto-header p {
+
+    font-family: "Cinzel", serif;
+    font-size: 22px;
+    color: #e2c669;
+    transition: 0.9s;
+
+}
+.texto-header p:hover{
+
+    transform: scale(1.1);
+}
+
+header img {
+
+    width: 350px;
+    height: auto;
+    transition: 0.9s;
+
+}
+header img:hover{
+
+    transform: scale(1.1);
+}
+
+
+/* ================= BANNER ================= */
+
+
+#banner {
+
+    position: relative;
+    width: 100%;
+
+}
+
+
+#banner img {
+
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+
+}
+
+/* ================= MENU SOBRE EL BANNER ================= */
+
+nav {
+
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+nav a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 25px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 8px;
+    transition: 0.9s;
+
+}
+
+nav a:hover {
+
+    background-color: #d4af37;
+    color: black;
+    transform: scale(1.1);
+
+}
+
+nav a.activo {
+    color: #d4af37;
+    font-weight: bold;
+    border-bottom: 2px solid #d4af37;
+}
+
+/* ================= Contenido aqui, carajo ================= */
+
+
+/* ===========================
+   SERVICIOS
+=========================== */
+
+#servicios{
+
+    width: 90%;
+
+    margin: 60px auto;
+
+    text-align: center;
+
+}
+
+
+#servicios h2{
+
+    color: #e2c669;
+
+    font-size: 40px;
+
+    margin-bottom: 40px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* CONTENEDOR */
+
+.lista-servicios{
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+
+}
+
+
+/* TARJETA */
+
+.servicio{
+
+    background: #111;
+    border: 2px solid #e2c669;
+    border-radius: 12px;
+    padding: 25px;
+    transition: .3s;
+    box-shadow: 0 0 10px rgba(226,198,105,.15);
+    text-decoration: none;
+    color: white;
+    
+
+}
+
+
+
+/* EFECTO */
+
+.servicio:hover{
+
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(226,198,105,.6);
+    cursor: pointer;
+
+}
+
+
+/* NOMBRE */
+
+.servicio h3{
+
+    color: #e2c669;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* PRECIO */
+
+.servicio p{
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    #servicios h2{
+
+        font-size: 30px;
+
+    }
+
+    .servicio{
+
+        padding: 20px;
+
+    }
+
+    .servicio h3{
+
+        font-size: 20px;
+
+    }
+
+    .servicio p{
+
+        font-size: 24px;
+
+    }
+
+}
+
+
+
+
+/* ================= FOOTER ================= */
+
+/* Esto hace que el scroll en HTML sea smooth */
+html{
+
+    scroll-behavior: smooth;
+}
+/* Esto hace que el scroll en HTML sea smooth */
+
+footer {
+
+    background-color: #000000;
+    text-align: center;
+    padding: 30px;
+    border-top: 2px solid #d4af37;
+    justify-content: center;
+
+}
+
+footer p {
+
+    margin: 5px;
+    color:  #d4af37;
+    margin-bottom: 10px;
+
+}
+
+footer a {
+
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.fa-solid.fa-location-dot{
+
+    color: red;
+}
+
+.fa-instagram{
+    background: linear-gradient(45deg, #FEDA75, #FA7E1E, #D62976, #962FBF, #4F5BD5 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.fa-facebook{
+    color: #1877f2;
+}
+.fa-whatsapp{
+    color: #25D366;
+}
+
+.reservar {
+
+    background-color: #d4af37;
+    color: black;
+    font-weight: bold;
+    transition: 0.9s;
+
+}
+
+
+.admin {
+
+    background-color: #333;
+    color: white;
+    transition: 0.9s;
+
+}
+
+footer a:hover {
+
+    transform: scale(1.05);
+
+}
