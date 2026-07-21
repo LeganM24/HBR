@@ -101,7 +101,7 @@ header img:hover{
 
 /* ================= MENU SOBRE EL BANNER ================= */
 
-nav {
+#banner nav {
 
     position: absolute;
     top: 20px;
@@ -141,7 +141,7 @@ nav a:hover {
 
     display: flex;
     gap: 30px;
-    padding: 40px;
+    padding: 20px;
 
 }
 
@@ -169,6 +169,7 @@ nav a:hover {
     
     width: 50%;
     position: relative;
+    min-height:350px;
 
 }
 
@@ -268,6 +269,156 @@ footer a {
 footer a:hover {
 
     transform: scale(1.05);
+
+}
+
+
+/* ==========================
+        RESPONSIVE CELULAR
+========================== */
+
+@media(max-width:768px){
+
+
+    /* HEADER */
+
+    header{
+
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+
+    }
+
+
+    .texto-header h1{
+
+        font-size: 28px;
+
+    }
+
+
+    .texto-header p{
+
+        font-size: 16px;
+
+    }
+
+
+    .logo img{
+
+        width: 180px;
+        margin-top: 15px;
+
+    }
+
+
+
+    /* BANNER */
+
+    #banner img{
+
+        
+        height: 250px;
+        object-fit:cover;
+
+    }
+
+
+
+    /* MENU SOBRE EL BANNER */
+
+    #banner nav{
+
+        position: static;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+        padding:20px;
+
+    }
+
+
+    #banner nav a{
+
+        width:80%;
+        text-align:center;
+        padding:12px;
+
+    }
+
+
+
+    /* CONTENIDO */
+
+    #contenido{
+
+        display:flex;
+        flex-direction:column;
+
+    }
+
+
+
+    /* GALERIA */
+
+    #galeria{
+
+        display:grid;
+        grid-template-columns:1fr;
+        gap:15px;
+
+    }
+
+
+    #galeria img{
+
+        width:100%;
+        height:250px;
+        object-fit:cover;
+
+    }
+
+
+
+    /* SLIDER */
+
+    #slider{
+
+        width:100%;
+        height:350px;
+
+    }
+
+
+    #slider img{
+
+        width:100%;
+        height:350px;
+        object-fit:cover;
+
+    }
+
+
+
+    /* FOOTER */
+
+    footer{
+
+        text-align:center;
+        padding:20px;
+
+    }
+
+
+    footer a{
+
+        display:block;
+        margin:10px;
+
+    }
 
 }
 
