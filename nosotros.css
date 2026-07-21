@@ -102,26 +102,22 @@ header img:hover{
 
 #banner nav {
 
-    position: absolute;
-    top: 20px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+    position:absolute;
+    top:10px;
+    left:0;
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
 
 }
 
 #banner nav a {
 
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 12px 25px;
-    background-color: rgba(0,0,0,0.7);
-    border-radius: 8px;
-    transition: 0.9s;
+    width:80%;
+    text-align:center;
+    font-size:16px;
+    padding:10px;
 
 }
 
