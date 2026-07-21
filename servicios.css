@@ -43,7 +43,7 @@ header {
     margin: 10px 0;
     color: #e2c669;
     transition: 0.9s;
-    font-family: "Cinzel", serif;
+    
 
 }
 
@@ -54,7 +54,7 @@ header {
 
 .texto-header p {
 
-    font-family: "Cinzel", serif;
+    
     font-size: 22px;
     color: #e2c669;
     transition: 0.9s;
@@ -388,7 +388,7 @@ footer a:hover {
 
     header img{
 
-        width:160px;
+        width:180px;
 
     }
 
@@ -398,7 +398,7 @@ footer a:hover {
 
     #banner img{
 
-        height:220px;
+        height:300px;
         object-fit:cover;
 
     }
@@ -409,21 +409,24 @@ footer a:hover {
 
     nav{
 
-        position:static;
-        flex-direction:column;
-        align-items:center;
-        gap:10px;
-        padding:20px;
+        position:absolute;
+    top:10px;
+    left:0;
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+
 
     }
 
 
     nav a{
 
-        width:80%;
-        text-align:center;
-        font-size:16px;
-        padding:10px;
+       width:80%;
+    text-align:center;
+    font-size:16px;
+    padding:10px;
 
     }
 
