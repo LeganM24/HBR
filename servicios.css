@@ -351,3 +351,138 @@ footer a:hover {
     transform: scale(1.05);
 
 }
+
+/* ==========================
+        RESPONSIVE CELULAR
+========================== */
+
+
+@media(max-width:768px){
+
+
+    /* HEADER */
+
+    header{
+
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+
+    }
+
+
+    .texto-header h1{
+
+        font-size:24px;
+        line-height:1.3;
+
+    }
+
+
+    .texto-header p{
+
+        font-size:16px;
+
+    }
+
+
+    header img{
+
+        width:160px;
+
+    }
+
+
+
+    /* BANNER */
+
+    #banner img{
+
+        height:220px;
+        object-fit:cover;
+
+    }
+
+
+
+    /* MENU */
+
+    nav{
+
+        position:static;
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+        padding:20px;
+
+    }
+
+
+    nav a{
+
+        width:80%;
+        text-align:center;
+        font-size:16px;
+        padding:10px;
+
+    }
+
+
+
+    /* SERVICIOS */
+
+    #servicios{
+
+        width:90%;
+        margin:30px auto;
+
+    }
+
+
+    #servicios h2{
+
+        font-size:30px;
+
+    }
+
+
+    .lista-servicios{
+
+        grid-template-columns:1fr;
+        gap:20px;
+
+    }
+
+
+    .servicio{
+
+        padding:20px;
+
+    }
+
+
+    .servicio h3{
+
+        font-size:20px;
+
+    }
+
+
+    .servicio p{
+
+        font-size:24px;
+
+    }
+
+
+
+    /* FOOTER */
+
+    footer a{
+
+        display:block;
+        margin:10px;
+
+    }
+
+}
