@@ -43,7 +43,7 @@ header {
     margin: 10px 0;
     color: #e2c669;
     transition: 0.9s;
-    font-family: "Cinzel", serif;
+    
 
 }
 
@@ -54,7 +54,7 @@ header {
 
 .texto-header p {
 
-    font-family: "Cinzel", serif;
+    
     font-size: 22px;
     color: #e2c669;
     transition: 0.9s;
@@ -334,5 +334,136 @@ footer a {
 footer a:hover {
 
     transform: scale(1.05);
+
+}
+
+
+/* ==========================
+        RESPONSIVE CELULAR
+========================== */
+
+
+@media(max-width:768px){
+
+
+/* HEADER */
+
+
+header{
+
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+
+}
+
+
+.texto-header h1{
+
+    font-size:24px;
+    line-height:1.3;
+
+}
+
+
+.texto-header p{
+
+    font-size:16px;
+
+}
+
+
+header img{
+
+    width:180px;
+
+}
+
+
+
+/* BANNER */
+
+
+#banner img{
+
+    height:300px;
+    object-fit:cover;
+
+}
+
+
+
+/* MENU */
+
+
+nav{
+
+    position:absolute;
+    top:10px;
+    left:0;
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+
+}
+
+
+
+nav a{
+
+    width:80%;
+    text-align:center;
+    font-size:16px;
+    padding:10px;
+
+}
+
+
+
+/* CUPOS */
+
+
+#cupos{
+
+    padding:25px 15px;
+
+}
+
+
+#cupos h2{
+
+    font-size:30px;
+
+}
+
+
+.lista-cupos{
+
+    flex-direction:column;
+    align-items:center;
+
+}
+
+
+.cupo{
+
+    width:90%;
+    max-width:320px;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer a{
+
+    display:block;
+    margin:10px;
+
+}
+
 
 }
