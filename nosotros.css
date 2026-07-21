@@ -100,7 +100,7 @@ header img:hover{
 
 /* ================= MENU SOBRE EL BANNER ================= */
 
-nav {
+#banner nav {
 
     position: absolute;
     top: 20px;
@@ -112,7 +112,7 @@ nav {
 
 }
 
-nav a {
+#banner nav a {
 
     text-decoration: none;
     color: white;
