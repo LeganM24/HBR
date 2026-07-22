@@ -335,43 +335,6 @@ header img:hover{
 }
 
 
-/* RESPONSIVE */
-
-@media(max-width:800px){
-
-
-    #panel-admin{
-
-        flex-direction: column;
-
-    }
-
-
-    .menu-admin{
-
-        width: 100%;
-
-    }
-
-
-    .tarjetas{
-
-        flex-direction: column;
-
-        align-items: center;
-
-    }
-
-    @media (max-width: 900px){
-
-        .lista-citas{
-
-        
-        grid-template-columns: 1fr;
-       }
-    }
-
-}
 
 /* ================= FOOTER ================= */
 
@@ -464,4 +427,236 @@ footer a:hover {
 .cita-admin{
 
     width: auto !important;
+}
+
+
+/* ================= RESPONSIVE CELULAR ================= */
+
+
+@media(max-width:480px){
+
+
+
+    /* HEADER */
+
+    header{
+
+        flex-direction:column;
+        justify-content:center;
+        gap:20px;
+        padding:15px;
+
+    }
+
+
+
+    .texto-header h1{
+
+        font-size:22px;
+
+    }
+
+
+
+    .texto-header p{
+
+        font-size:15px;
+
+    }
+
+
+
+    header img{
+
+        width:170px;
+
+    }
+
+
+
+
+    /* PANEL ADMIN */
+
+    #panel-admin{
+
+        flex-direction:column;
+        width:95%;
+        margin:20px auto;
+        gap:20px;
+
+    }
+
+
+
+
+    /* MENU */
+
+    .menu-admin{
+
+        width:100%;
+        padding:20px 15px;
+
+    }
+
+
+
+    .menu-admin h2{
+
+        font-size:22px;
+        margin-bottom:20px;
+
+    }
+
+
+
+    .menu-admin a{
+
+        justify-content:center;
+        padding:12px;
+        font-size:14px;
+
+    }
+
+
+
+
+    /* CONTENIDO */
+
+    .contenido-admin{
+
+        padding:20px 15px;
+
+    }
+
+
+
+    .contenido-admin h2{
+
+        font-size:21px;
+        margin-bottom:20px;
+
+    }
+
+
+
+
+    /* BUSCADOR */
+
+    .buscador{
+
+        flex-direction:column;
+        gap:10px;
+        margin:20px 0;
+
+    }
+
+
+
+    .buscador input{
+
+        width:100%;
+        font-size:14px;
+
+    }
+
+
+
+    .buscador button{
+
+        width:100%;
+        padding:12px;
+
+    }
+
+
+
+
+    /* LISTA DE CITAS */
+
+    .lista-citas{
+
+        grid-template-columns:1fr !important;
+        gap:20px;
+
+    }
+
+
+
+    /* TARJETA DE CITA */
+
+    .cita-admin{
+
+        padding:18px;
+
+    }
+
+
+
+    .cita-admin h3{
+
+        font-size:18px;
+
+    }
+
+
+
+    .cita-admin p{
+
+        font-size:14px;
+        line-height:1.5;
+
+    }
+
+
+
+    .cita-admin strong{
+
+        font-size:14px;
+
+    }
+
+
+
+
+    /* BOTONES */
+
+    .acciones-cita{
+
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+
+    }
+
+
+
+    .acciones-cita button{
+
+        width:100%;
+        padding:10px;
+        font-size:14px;
+
+    }
+
+
+
+
+    /* FOOTER */
+
+    footer{
+
+        padding:20px;
+
+    }
+
+
+
+    footer a{
+
+        display:block;
+        margin:10px;
+
+    }
+
+
 }
