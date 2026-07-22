@@ -398,24 +398,24 @@ header img{
 
 #banner nav{
 
-    position:absolute;
-    top:10px;
-    left:0;
-    width:100%;
-    flex-direction:column;
-    align-items:center;
-    gap:10px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 10px;
 
 }
 
-
-
 #banner nav a{
 
-    width:80%;
-    text-align:center;
-    font-size:16px;
-    padding:10px;
+    width: auto;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 12px;
 
 }
 
