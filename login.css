@@ -133,4 +133,127 @@ button:hover{
 }
 
 
+/* ================= RESPONSIVE LOGIN ================= */
+
+
+@media (max-width: 768px){
+
+    body{
+
+        background-size: 700px;
+
+        padding:20px;
+
+    }
+
+
+    .contenedor{
+
+        width:90%;
+
+        padding:45px 30px;
+
+    }
+
+
+    h1{
+
+        font-size:26px;
+
+    }
+
+
+    input{
+
+        font-size:15px;
+
+    }
+
+
+    button{
+
+        font-size:15px;
+
+    }
+
+
+    .btn-inicio{
+
+        top:15px;
+
+        right:15px;
+
+        padding:8px 15px;
+
+        font-size:14px;
+
+    }
+
+}
+
+
+
+@media (max-width: 480px){
+
+
+    body{
+
+        background-size:500px;
+
+    }
+
+
+    .contenedor{
+
+        width:95%;
+
+        padding:35px 20px;
+
+        border-radius:12px;
+
+    }
+
+
+    h1{
+
+        font-size:22px;
+
+        margin-bottom:20px;
+
+    }
+
+
+    input{
+
+        padding:10px;
+
+        font-size:14px;
+
+    }
+
+
+    button{
+
+        padding:10px;
+
+        font-size:14px;
+
+    }
+
+
+    .btn-inicio{
+
+        top:10px;
+
+        right:10px;
+
+        padding:7px 12px;
+
+        font-size:12px;
+
+    }
+
+}
+
+
 
