@@ -205,22 +205,15 @@ header img:hover{
 .agregar-servicio{
 
     display: block;
-
     margin: 20px auto 35px;
-
     padding: 12px 25px;
-
     background: #d4af37;
     color: #000;
-
     border: none;
     border-radius: 8px;
-
     font-size: 16px;
     font-weight: bold;
-
     cursor: pointer;
-
     transition: .3s;
 
 }
@@ -228,7 +221,6 @@ header img:hover{
 .agregar-servicio:hover{
 
     background: #f1c84b;
-
     transform: translateY(-3px);
 
 }
@@ -242,13 +234,9 @@ header img:hover{
 .lista-servicios{
 
     display: flex;
-
     justify-content: center;
-
     flex-wrap: wrap;
-
     gap: 25px;
-
     margin-top: 30px;
 
 }
@@ -262,21 +250,13 @@ header img:hover{
 .servicio{
 
     width: 280px;
-
     background: #1f1f1f;
-
     color: white;
-
     border-left: 5px solid #d4af37;
-
     border-radius: 12px;
-
     padding: 20px;
-
     text-align: center;
-
     transition: .3s;
-
     box-shadow: 0 0 12px rgba(0,0,0,.4);
 
 }
@@ -284,7 +264,6 @@ header img:hover{
 .servicio:hover{
 
     transform: translateY(-5px);
-
     box-shadow: 0 0 18px rgba(212,175,55,.4);
 
 }
@@ -292,7 +271,6 @@ header img:hover{
 .servicio h3{
 
     color: #d4af37;
-
     margin-bottom: 12px;
 
 }
@@ -300,7 +278,6 @@ header img:hover{
 .servicio p{
 
     font-size: 18px;
-
     font-weight: bold;
 
 }
@@ -314,11 +291,8 @@ header img:hover{
 .acciones-servicio{
 
     display: flex;
-
     flex-direction: column;
-
     gap: 10px;
-
     margin-top: 20px;
 
 }
@@ -326,19 +300,12 @@ header img:hover{
 .acciones-servicio button{
 
     width: 100%;
-
     padding: 10px;
-
     border: none;
-
     border-radius: 8px;
-
     cursor: pointer;
-
     font-size: 15px;
-
     font-weight: bold;
-
     transition: .3s;
 
 }
@@ -350,7 +317,6 @@ header img:hover{
 .editar{
 
     background: #d4af37;
-
     color: black;
 
 }
@@ -368,7 +334,6 @@ header img:hover{
 .eliminar{
 
     background: #a61d24;
-
     color: white;
 
 }
@@ -481,4 +446,201 @@ footer a:hover {
 .cita-admin{
 
     width: auto !important;
+}
+
+
+/* ================= RESPONSIVE CELULAR ================= */
+
+
+@media(max-width:480px){
+
+
+
+    /* HEADER */
+
+    header{
+
+        flex-direction:column;
+        justify-content:center;
+        gap:20px;
+        padding:15px;
+
+    }
+
+
+
+    .texto-header h1{
+
+        font-size:22px;
+
+    }
+
+
+
+    .texto-header p{
+
+        font-size:15px;
+
+    }
+
+
+
+    header img{
+
+        width:170px;
+
+    }
+
+
+
+
+    /* PANEL ADMIN */
+
+    #panel-admin{
+
+        flex-direction:column;
+        width:95%;
+        margin:20px auto;
+        gap:20px;
+
+    }
+
+
+
+
+    /* MENU */
+
+    .menu-admin{
+
+        width:100%;
+        padding:20px 15px;
+
+    }
+
+
+
+    .menu-admin h2{
+
+        font-size:22px;
+        margin-bottom:20px;
+
+    }
+
+
+
+    .menu-admin a{
+
+        justify-content:center;
+        padding:12px;
+        font-size:14px;
+
+    }
+
+
+
+
+    /* CONTENIDO */
+
+    .contenido-admin{
+
+        padding:20px 15px;
+
+    }
+
+
+
+    .contenido-admin h2{
+
+        font-size:21px;
+        margin-bottom:20px;
+
+    }
+
+
+
+
+    /* BOTON AGREGAR */
+
+    .agregar-servicio{
+
+        width:100%;
+        font-size:14px;
+        padding:12px;
+
+    }
+
+
+
+
+    /* LISTA SERVICIOS */
+
+    .lista-servicios{
+
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+
+    }
+
+
+
+
+    /* TARJETAS */
+
+    .servicio{
+
+        width:95%;
+        padding:18px;
+
+    }
+
+
+
+    .servicio h3{
+
+        font-size:18px;
+
+    }
+
+
+
+    .servicio p{
+
+        font-size:16px;
+
+    }
+
+
+
+
+    /* BOTONES */
+
+    .acciones-servicio button{
+
+        padding:12px;
+        font-size:14px;
+
+    }
+
+
+
+
+    /* FOOTER */
+
+    footer{
+
+        padding:20px;
+
+    }
+
+
+
+    footer a{
+
+        display:block;
+        margin:10px;
+
+    }
+
+
 }
