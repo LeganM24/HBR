@@ -407,9 +407,9 @@ footer a:hover {
 
     /* MENU */
 
-    nav{
+   nav{
 
-        position:absolute;
+    position:absolute;
     top:10px;
     left:0;
     width:100%;
@@ -417,18 +417,16 @@ footer a:hover {
     align-items:center;
     gap:10px;
 
+}
 
-    }
+nav a{
 
-
-    nav a{
-
-       width:80%;
+    width:80%;
     text-align:center;
     font-size:16px;
     padding:10px;
 
-    }
+}
 
 
 
