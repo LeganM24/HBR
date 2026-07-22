@@ -458,3 +458,168 @@ footer a:hover {
     transform: scale(1.05);
 
 }
+
+
+/* ================= RESPONSIVE CELULAR ================= */
+
+@media (max-width: 768px){
+
+    /* HEADER */
+
+    header{
+
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+
+    }
+
+    header img{
+
+        width: 180px;
+
+    }
+
+    .texto-header h1{
+
+        font-size: 24px;
+
+    }
+
+    .texto-header p{
+
+        font-size: 16px;
+
+    }
+
+    /* BANNER */
+
+    #banner img{
+
+        height: 220px;
+
+    }
+
+    /* MENÚ */
+
+    nav{
+
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 0 10px;
+
+    }
+
+    nav a{
+
+        font-size: 14px;
+        padding: 8px 12px;
+
+    }
+
+    /* FORMULARIO */
+
+    #contenido{
+
+        width: 95%;
+        padding: 20px;
+
+    }
+
+    #contenido h2{
+
+        font-size: 24px;
+
+    }
+
+    #contenido p{
+
+        font-size: 15px;
+
+    }
+
+    input,
+    select,
+    textarea{
+
+        font-size: 16px;
+
+    }
+
+    #reservacion{
+
+        width: 100%;
+        font-size: 18px;
+
+    }
+
+    /* TARJETA DE CITA */
+
+    #citaCreada{
+
+        width: 95%;
+        margin: 30px auto;
+
+    }
+
+    .tarjetaCita{
+
+        padding: 20px;
+
+    }
+
+    .tarjetaCita h2{
+
+        font-size: 22px;
+
+    }
+
+    .tarjetaCita p{
+
+        font-size: 15px;
+
+    }
+
+    /* BUSCAR CITA */
+
+    #buscarCita{
+
+        width: 95%;
+        padding: 20px;
+
+    }
+
+    #buscarCita h2{
+
+        font-size: 24px;
+
+    }
+
+    #buscar{
+
+        width: 100%;
+
+    }
+
+    /* FOOTER */
+
+    footer{
+
+        padding: 20px;
+
+    }
+
+    footer a{
+
+        display: block;
+        margin: 10px auto;
+
+    }
+
+}
